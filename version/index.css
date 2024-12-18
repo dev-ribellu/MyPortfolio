@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.background-gradient {
+    width: 1440px;
+    height: 1024px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(70, 38, 92, 0.40) 0%, rgba(70, 38, 92, 0.40) 100%);
+}
+
+.section {
+    width: 1440px;
+    height: 821px;
+    position: absolute;
+    background: #32223D;
+    border-radius: 40px;
+    border: 1px white solid;
+}
+
+.section-1 {
+    top: 979px;
+}
+
+.section-2 {
+    top: 2314px;
+}
+
+.contact-form-container {
+    position: absolute;
+    left: 220px;
+    top: 3271px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.contact-title {
+    width: 161px;
+    height: 35px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.input-field, .message-field {
+    position: relative;
+    width: 212px;
+    height: 28px;
+}
+
+.message-field {
+    width: 500px;
+    height: 219px;
+}
+
+.input-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+}
+
+.input-placeholder {
+    position: absolute;
+    left: 9px;
+    top: 3px;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.button-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+.button {
+    padding: 19px 20px;
+    background: #46265C;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text {
+    width: 128px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button-border {
+    width: 29px;
+    height: 0;
+    border: 2px white solid;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-background {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+.skills-section {
+    width: 1185px;
+    height: 468px;
+    position: absolute;
+    left: 127px;
+    top: 1817px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+
+.skills-title {
+    width: 132px;
+    height: 48px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.skills-container {
+    width: 1185px;
+    height: 374px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-card {
+    width: 285px;
+    height: 374px;
+    position: relative;
+}
+
+.skill-card-background {
+    width: 285px;
+    height: 374px;
+    position: absolute;
+    background: #32223D;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.50);
+    border-radius: 40px;
+}
+
+.skill-card-content {
+    width: 228px;
+    height: 262px;
+    position: absolute;
+    left: 28px;
+    top: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 66px;
+    height: 66px;
+    padding: 8.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-background {
+    width: 49.50px;
+    height: 49.50px;
+    background: white;
+}
+
+.skill-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.skill-name {
+    width: 230px;
+    height: 37px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.skill-description {
+    width: 228px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+}
+
+
+
+.about-section {
+    position: absolute;
+    left: 125px;
+    top: 1123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+}
+
+.profile-image {
+    width: 535px;
+    height: 535px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    border-radius: 9999px;
+}
+
+.about-content {
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 34px;
+}
+
+.about-title {
+    width: 93px;
+    height: 23px;
+    color: #A96CD7;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-description {
+    width: 631px;
+    height: 79px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-text {
+    width: 631px;
+    height: 81px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.detail-label {
+    width: 141px;
+    height: 23px;
+    color: #A96CD7;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.detail-value {
+    width: 167px;
+    height: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    left: 462px;
+    top: 288px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-content {
+    height: 349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-title {
+    width: 515px;
+    height: 221px;
+    text-align: center;
+    color: white;
+    font-size: 96px;
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.header-button {
+    padding: 19px 20px;
+    background: #46265C;
+    border-radius: 15px;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-subtitle {
+    width: 318px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar {
+    position: absolute;
+    left: 118px;
+    top: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 687px;
+}
+
+.nav-item {
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-image {
+    width: 582px;
+    height: 590px;
+    position: absolute;
+    left: 738px;
+    top: 3271px;
+    border-radius: 40px;
+}
+
+
+.project-section {
+    width: 1192px;
+    height: 655px;
+    position: absolute;
+    left: 120px;
+    top: 2428px;
+}
+
+.project-title {
+    width: 342px;
+    height: 48px;
+    position: absolute;
+    left: 429px;
+    top: 0px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.project-container {
+    width: 1187px;
+    height: 607px;
+    position: absolute;
+    left: 3px;
+    top: 48px;
+    padding-top: 80px;
+    padding-bottom: 6px;
+    padding-left: 127px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.project-card {
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.project-card.faded {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    opacity: 0.25;
+}
+
+.project-image {
+    width: 384px;
+    height: 360px;
+    background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%);
+    border-radius: 40px;
+}
+
+.project-name {
+    width: 299px;
+    height: 49px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
