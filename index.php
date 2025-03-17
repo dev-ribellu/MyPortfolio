@@ -1,9 +1,18 @@
 <?php
-
-    $pdo = require 'include/connect.php';
+    require_once 'model/homeModel.php';
+    require_once 'controller/homeController.php';
+    
+    $pdo = require 'model/connect.php';
     $sql = 'SELECT * FROM utilisateur';
     $statement = $pdo->query($sql);
     $user_data = $statement->fetch(PDO::FETCH_ASSOC);
+
+    $homeModel = new HomeModel($pdo);
+    $homeController = new HomeController($homeModel);
+    $title = $homeController->getTitle();
+    $subtitle = $homeController->getSubtitle();
+    $showicons = $homeController->getShowIcons();
+
     
 ?>
 
