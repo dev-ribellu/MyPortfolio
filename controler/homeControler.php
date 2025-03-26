@@ -94,5 +94,10 @@ class HomeController {
         $utilisateurId = $this->getInfo()['id'];
         return $this->homeModel->getMetiers($utilisateurId);
     }
+    public function getLogo() {
+        return $this->getInfo()['logo'];
+    }
+
+
 }
 ?>

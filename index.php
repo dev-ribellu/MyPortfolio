@@ -27,7 +27,7 @@
 <body>
     <div id="particles-js"></div>
     <header>
-        <img src="images/dev-logo.png" alt="Logo" class="logo">
+        <img src="<?= htmlspecialchars($homeController->getLogo()) ?>" alt="Logo" class="logo">
         <button class="menu-toggle" aria-label="Toggle navigation">
             <span class="menu-icon"></span>
         </button>
@@ -85,7 +85,7 @@
             </div>
         </section>
 
-        <!-- Section Compétences (exemple statique) -->
+        <!-- Section Compétences (généré dynamiquement) -->
         <section id="competences">
             <div class="content-wrapper">
                 <div class="titre">
@@ -94,14 +94,38 @@
                 </div>
                 <div class="center">
                     <h1>Software skills</h1>
-                    <div class="skillbox">
-                        <p>HTML5</p>
-                        <p>90%</p>
-                        <div class="skill">
-                            <div class="skill_level" data-skill="90"></div>
+                    <?php
+                    $competences = $homeController->getCompetences();
+                    foreach ($competences as $competence) {
+                        $skillName = $competence['nom'];
+                        $niveau = $competence['niveau'];
+                        // Mapping des niveaux en pourcentage
+                        switch ($niveau) {
+                            case 'Débutant':
+                                $pourcentage = 25;
+                                break;
+                            case 'Intermédiaire':
+                                $pourcentage = 50;
+                                break;
+                            case 'Avancé':
+                                $pourcentage = 75;
+                                break;
+                            case 'Expert':
+                                $pourcentage = 90;
+                                break;
+                            default:
+                                $pourcentage = 0;
+                                break;
+                        }
+                        ?>
+                        <div class="skillbox">
+                            <p><?= htmlspecialchars($skillName) ?></p>
+                            <p><?= $pourcentage ?>%</p>
+                            <div class="skill">
+                                <div class="skill_level" data-skill="<?= $pourcentage ?>"></div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Autres compétences... -->
+                    <?php } ?>
                 </div>
             </div>
         </section>

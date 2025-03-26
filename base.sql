@@ -13,7 +13,8 @@ CREATE TABLE utilisateur (
     linkedin VARCHAR(255),
     github VARCHAR(255),
     image_accueil VARCHAR(255),
-    image_apropos VARCHAR(255)
+    image_apropos VARCHAR(255),
+    logo VARCHAR(255)
 );
 
 CREATE TABLE emails (
@@ -85,7 +86,7 @@ CREATE TABLE utilisateur_metiers (
     FOREIGN KEY (metier_id) REFERENCES metiers(id) ON DELETE CASCADE
 );
 
-INSERT INTO utilisateur (nom, bio, telephone, adresse, date_naissance, experience, statut, linkedin, github, image_accueil, image_apropos) VALUES 
+INSERT INTO utilisateur (nom, bio, telephone, adresse, date_naissance, experience, statut, linkedin, github, image_accueil, image_apropos, logo) VALUES 
 ('Robin Fligitter', 
  'Je suis un développeur front-end passionné avec une expérience en community management et en graphisme.', 
  '0123456789', 
@@ -95,8 +96,10 @@ INSERT INTO utilisateur (nom, bio, telephone, adresse, date_naissance, experienc
  'Freelance', 
  'https://www.linkedin.com/in/robinfligitter', 
  'https://github.com/robinfligitter', 
- 'images/accueil.jpg', 
- 'images/about.jpg');
+ 'images/Robin_edit.jpg', 
+ 'images/about.jpg',
+ 'images/dev-logo.png'        -- logo choisi
+);
 
 INSERT INTO emails (utilisateur_id, email, type) VALUES 
 (1, 'robin@example.com', 'Professionnel');
