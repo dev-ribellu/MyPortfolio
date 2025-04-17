@@ -74,17 +74,23 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    min-width: 44px; 
+    min-height: 44px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+    min-width: 44px; 
+    min-height: 44px;
 }
 
 nav ul li a.active {
     color: #FFD700;
     text-shadow: 0 0 10px #FFD700;
+    min-width: 44px; 
+    min-height: 44px;
 }
 
 
@@ -113,11 +119,15 @@ nav ul li a.active {
         margin-top: 10px;
         width: 100%;
         text-align: left;
+        min-width: 44px; 
+        min-height: 44px;
     }
 
     nav ul li a {
         padding: 10px 20px;
         width: 100%;
         display: block;
+        min-width: 44px; 
+        min-height: 44px;
     }
 }
