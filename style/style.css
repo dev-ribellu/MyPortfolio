@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.125rem; /* 18px converti par rapport à une base de 16px */
+    min-width: 872px; /* Largeur minimale de 872px */
 }
   
 main {
@@ -55,9 +56,29 @@ main {
 .btn:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
 }
+
+#boutonsCV:hover::before {
+    content: "Télécharger CV";
+    position: absolute;
+    bottom: 100%; /* Afficher au-dessus du bouton */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000; /* Même couleur de fond que votre site */
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin-bottom: 8px; /* Espacement entre le texte et le bouton */
+    font-size: 0.9rem;
+}
 button {
     min-width: 44px; 
     min-height: 44px;
+}
+button:disabled,
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* Réduit l'opacité pour les boutons désactivés */
 }
   
 @media (max-width: 480px) {

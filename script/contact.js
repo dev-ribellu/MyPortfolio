@@ -49,3 +49,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }, speed);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.formulaire-contact form');
+    const inputs = form.querySelectorAll('input, textarea');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Désactiver le bouton au chargement de la page
+    submitButton.disabled = true;
+
+    // Fonction pour vérifier si tous les champs sont remplis et que l'email est valide
+    function checkFormValidity() {
+        let isValid = true;
+        
+        inputs.forEach(input => {
+            // Vérifier que le champ n'est pas vide
+            if (!input.value.trim()) {
+                isValid = false;
+            }
+            // Si le champ est de type email, vérifier sa validité
+            if (input.type === "email") {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(input.value.trim())) {
+                    isValid = false;
+                }
+            }
+        });
+
+        submitButton.disabled = !isValid;
+    }
+
+    // Ajouter un événement d'écoute sur chaque champ pour vérifier la validité au fur et à mesure
+    inputs.forEach(input => {
+        input.addEventListener('input', checkFormValidity);
+    });
+});
